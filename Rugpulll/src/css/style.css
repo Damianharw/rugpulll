@@ -5,15 +5,16 @@
 }
 
 body {
-  background-color: black;
-  color: white;
   font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  overflow: hidden;
   display: block;
+}
+
+a {
+  text-decoration: none;
 }
 
 .game-container {
@@ -174,6 +175,62 @@ body {
   cursor: pointer;
 }
 
+/* MAIN */
+
+.main-container {
+  text-align: center;
+  padding: 20px;
+  border-radius: 15px;
+  margin: 60px 0;
+}
+
+.main-container .main-header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.main-content {
+  margin-top: 20px;
+}
+
+.main-container .main-content .image-container {
+  margin: 0 auto;
+}
+
+.main-container .main-content .image-container .raccoon-image {
+  width: 500px;
+  height: auto;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 30px 0;
+}
+
+.main-container .main-content .description {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 40px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.main-container .main-content .buy-button {
+  background-color: #6a0dad;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.main-container .main-content .buy-button:hover {
+  background-color: #520b75;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   .nav-items {
@@ -194,5 +251,17 @@ body {
 
   .nav-toggler.active + .nav-items {
     display: flex;
+  }
+
+  .main-container .main-header h1 {
+    font-size: 1.7rem;
+  }
+
+  .main-container .main-content .image-container .raccoon-image {
+    width: 300px;
+  }
+
+  .main-container .main-content .description {
+    font-size: 1rem;
   }
 }
