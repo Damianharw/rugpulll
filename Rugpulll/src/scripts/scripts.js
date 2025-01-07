@@ -97,6 +97,9 @@ function fallObject(obj) {
             if (gameActive && !isCollected) {
                 score++;
                 isCollected = true;
+                const sound = new Audio('src/SFX/coin_collected.mp3');
+                sound.volume = 0.2;
+                sound.play();
                 scoreDisplay.textContent = `Score: ${score}`;
                 clearInterval(fallIntervalCoin);
                 obj.remove();
