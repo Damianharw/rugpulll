@@ -34,7 +34,7 @@ function spawnObjects() {
         const obj = document.createElement('div');
         obj.classList.add('falling-object');
         obj.style.left = Math.random() * (gameContainer.clientWidth - 20) + 'px';
-        obj.style.top = '0px';
+        obj.style.top = '-30px';
         gameContainer.appendChild(obj);
         fallObject(obj);
     }, 1000);
