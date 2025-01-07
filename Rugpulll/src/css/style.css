@@ -19,7 +19,7 @@ a {
 
 .game-container {
   position: relative;
-  width: 600px;
+  width: 50%;
   height: 400px;
   background-image: url("../img/box.jpg");
   background-size: cover;
@@ -28,6 +28,7 @@ a {
   border-radius: 10px;
   overflow: hidden;
   display: block;
+  margin-top: 10rem;
 }
 
 .start-button {
@@ -46,10 +47,20 @@ a {
 
 .falling-object {
   position: absolute;
-  width: 20px;
-  height: 20px;
-  background-color: #00f;
-  border-radius: 50%;
+  width: 101px;
+  height: 101px;
+  background: url("../img/bitcoin.png") 0 0 no-repeat;
+  animation: rotate 0.5s steps(10) infinite;
+  rotate: -90deg;
+}
+
+@keyframes rotate {
+  from {
+    background-position: 0 0;
+  }
+  to {
+      background-position: -1010px 0; /* Negative width of the sprite sheet */
+  }
 }
 
 .danger-object {
