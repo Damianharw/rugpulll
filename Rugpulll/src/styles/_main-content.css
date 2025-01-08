@@ -45,6 +45,11 @@
   justify-content: center;
 }
 
+.raccoon-image {
+  width: 450px !important;
+  height: 450px !important;
+}
+
 .main-container .main-content .buy-button {
   background-color: #6a0dad;
   color: white;
