@@ -20,8 +20,8 @@ a {
 .game-container {
   position: relative;
   width: 50%;
-  height: 400px;
-  background-image: url("../img/box.jpg");
+  height: 600px;
+  background-image: url("../img/gamebackground.jpeg");
   background-size: cover;
   background-position: center;
   border: 2px solid #fff;
@@ -29,6 +29,8 @@ a {
   overflow: hidden;
   display: block;
   margin-top: 10rem;
+  margin-bottom: 10rem;
+  min-width: 400px;
 }
 
 .start-button {
@@ -65,9 +67,19 @@ a {
 
 .danger-object {
   position: absolute;
-  width: 100px;
-  height: 20px;
-  background-color: red;
+  width: 275px;
+  height: 180px;
+  background: url("../img/rug.png");
+  animation: fly 1s steps(10) infinite;
+}
+
+@keyframes fly {
+  from {
+    background-position: 0 0;
+  }
+  to {
+      background-position: -2750px 0; /* Negative width of the sprite sheet */
+  }
 }
 
 .score {
@@ -207,6 +219,7 @@ a {
   border: 5px solid #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   margin: 30px 0;
+  min-width:400px;
 }
 
 .main-container .main-content .description {
@@ -264,4 +277,21 @@ a {
   .main-container .main-content .description {
     font-size: 1rem;
   }
+}
+
+.description {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: larger !important; 
+}
+
+.description-background {
+  background-color: rgba(0.2,0.2,0.2,0.7);
+  color: #ffffff;
+  padding: 20px;
+  padding-top: 40px;
+  border-radius: 40px;
+  margin: 40px 0;
+  width: 100%;
+  border: 2px solid #fff;
+  min-width: 400px;
 }
