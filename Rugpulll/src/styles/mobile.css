@@ -36,3 +36,13 @@
     font-size: 1rem;
   }
 }
+
+@media (max-width: 576px) {
+  #contract-number {
+    font-size: 1rem;
+  }
+
+  .contract-details {
+    padding: 20px 20px;
+  }
+}
