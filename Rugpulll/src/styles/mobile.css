@@ -1,0 +1,34 @@
+@media (max-width: 768px) {
+  .game-container {
+    width: 80%;
+  }
+
+  .nav-items {
+    display: none;
+  }
+
+  .nav-toggler {
+    display: block;
+  }
+
+  .main-container .main-header h1 {
+    font-size: 1.7rem;
+  }
+
+  .main-container .main-content .image-container .raccoon-image {
+    max-width: 350px;
+    width: 100%;
+  }
+
+  .main-container .main-content .description {
+    font-size: 1rem;
+  }
+
+  .background-video {
+    object-position: -400px 25px;
+  }
+
+  .description-background {
+    font-size: 0.8rem;
+  }
+}

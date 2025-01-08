@@ -1,0 +1,69 @@
+.game-container {
+  position: relative;
+  width: 50%;
+  height: 400px;
+  background-image: url("../img/gamebackground.jpeg");
+  background-size: cover;
+  background-position: center;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  display: block;
+  margin-bottom: 50px;
+}
+
+.start-button {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: #f00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.falling-object {
+  position: absolute;
+  width: 101px;
+  height: 101px;
+  background: url("../img/bitcoin.png") 0 0 no-repeat;
+  animation: rotate 0.5s steps(10) infinite;
+  rotate: -90deg;
+}
+
+@keyframes rotate {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -1010px 0; /* Negative width of the sprite sheet */
+  }
+}
+
+.danger-object {
+  position: absolute;
+  width: 275px;
+  height: 180px;
+  background: url("../img/rug.png");
+  animation: fly 1s steps(10) infinite;
+}
+
+@keyframes fly {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -2750px 0; /* Negative width of the sprite sheet */
+  }
+}
+
+.score {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 18px;
+}
