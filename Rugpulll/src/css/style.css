@@ -28,7 +28,7 @@ a {
   border-radius: 10px;
   overflow: hidden;
   display: block;
-  margin-top: 10rem;
+  margin-bottom: 50px;
 }
 
 .start-button {
@@ -54,12 +54,21 @@ a {
   rotate: -90deg;
 }
 
+#score {
+  position: absolute;
+  display: flex;
+  justify-self: flex-end;
+  top: 10px;
+  right: 10px;
+  color: cyan;
+}
+
 @keyframes rotate {
   from {
     background-position: 0 0;
   }
   to {
-      background-position: -1010px 0; /* Negative width of the sprite sheet */
+    background-position: -1010px 0; /* Negative width of the sprite sheet */
   }
 }
 
@@ -170,6 +179,41 @@ a {
   cursor: pointer;
 }
 
+/* Mobile Navbar Styles */
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 20%;
+  right: 30px;
+  width: 50%;
+  background-color: #051631;
+  padding: 30px;
+  z-index: 10;
+  border-radius: 30px;
+}
+
+.header .nav .container .mobile-nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 0;
+  font-size: 1.2rem;
+}
+
+.header .nav .container .mobile-nav a:last-child {
+  border-bottom: none;
+}
+
+.header .nav .container .mobile-nav a:hover {
+  color: #ff6600; /* Accent color */
+}
+
+/* Show the mobile navbar when active */
+.header .nav .container .mobile-nav.active {
+  display: flex;
+}
+
 /* MAIN */
 
 .main-container {
@@ -258,5 +302,13 @@ a {
 
   .main-container .main-content .description {
     font-size: 1rem;
+  }
+
+  .background-video {
+    object-position: -400px 25px;
+  }
+
+  .game-container {
+    width: 80%;
   }
 }
