@@ -31,4 +31,13 @@
   .description-background {
     font-size: 0.8rem;
   }
+
+  .contract-details strong {
+    color: #ff6600; /* Optional accent color */
+    margin-right: 20px;
+  }
+
+  #contract-number {
+    font-size: 1rem;
+  }
 }

@@ -77,3 +77,19 @@
   min-width: 350px;
   max-width: 1300px;
 }
+
+.contract-details {
+  margin-top: 30px;
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+}
+
+.contract-details strong {
+  color: #ff6600; /* Optional accent color */
+  margin-right: 20px;
+}
+
+#contract-number {
+  font-size: 1.5rem;
+}
