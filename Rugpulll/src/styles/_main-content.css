@@ -83,11 +83,14 @@
   font-size: 1rem;
   color: white;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .contract-details strong {
   color: #ff6600; /* Optional accent color */
-  margin-right: 20px;
 }
 
 #contract-number {
