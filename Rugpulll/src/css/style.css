@@ -170,6 +170,11 @@ a {
   font-size: medium;
 }
 
+.linkss a {
+  display: flex;
+  align-items: center;
+}
+
 .links a:hover,
 .socials a:hover {
   color: #ff6600;
