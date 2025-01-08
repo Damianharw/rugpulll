@@ -60,7 +60,7 @@ a {
   justify-self: flex-end;
   top: 10px;
   right: 10px;
-  color: cyan;
+  color: white;
 }
 
 @keyframes rotate {
