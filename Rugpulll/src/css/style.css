@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Times New Roman", Times, serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,7 +20,7 @@ a {
 .game-container {
   position: relative;
   width: 50%;
-  height: 600px;
+  height: 400px;
   background-image: url("../img/gamebackground.jpeg");
   background-size: cover;
   background-position: center;
@@ -28,9 +28,7 @@ a {
   border-radius: 10px;
   overflow: hidden;
   display: block;
-  margin-top: 10rem;
-  margin-bottom: 10rem;
-  min-width: 400px;
+  margin-bottom: 50px;
 }
 
 .start-button {
@@ -54,15 +52,6 @@ a {
   background: url("../img/bitcoin.png") 0 0 no-repeat;
   animation: rotate 0.5s steps(10) infinite;
   rotate: -90deg;
-}
-
-#score {
-  position: absolute;
-  display: flex;
-  justify-self: flex-end;
-  top: 10px;
-  right: 10px;
-  color: white;
 }
 
 @keyframes rotate {
@@ -252,6 +241,10 @@ a {
   margin-top: 20px;
 }
 
+.main-container .main-header .main-content .main-description {
+  text-align: center;
+}
+
 .main-container .main-content .image-container {
   margin: 0 auto;
 }
@@ -263,7 +256,6 @@ a {
   border: 5px solid #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   margin: 30px 0;
-  min-width: 400px;
 }
 
 .main-container .main-content .description {
@@ -315,11 +307,19 @@ a {
   }
 
   .main-container .main-content .image-container .raccoon-image {
-    width: 300px;
+    width: 350px;
   }
 
   .main-container .main-content .description {
     font-size: 1rem;
+  }
+
+  .game-container {
+    width: 80%;
+  }
+
+  .description-background {
+    font-size: 0.8rem;
   }
 }
 
@@ -338,5 +338,4 @@ a {
   margin: 40px 0;
   width: 100%;
   border: 2px solid #fff;
-  min-width: 400px;
 }
