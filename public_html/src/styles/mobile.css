@@ -40,6 +40,18 @@
   #contract-number {
     font-size: 1rem;
   }
+
+  .danger-object {
+    scale: 0.4 !important;
+  }
+
+  .score {
+    scale: 0.5;
+  }
+
+  #score-number {
+    font-size: 3rem;
+  }
 }
 
 @media (max-width: 576px) {
@@ -50,4 +62,5 @@
   .contract-details {
     padding: 20px 20px;
   }
+
 }

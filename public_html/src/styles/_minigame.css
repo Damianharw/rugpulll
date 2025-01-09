@@ -52,6 +52,7 @@
   background: url("../img/rug.png");
   background-repeat: no-repeat;
   animation: fly 1s steps(10) infinite;
+  scale: 0.8;
 }
 
 @keyframes fly {
