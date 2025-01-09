@@ -1,6 +1,6 @@
 const gameContainer = document.getElementById('game-container');
 const startButton = document.getElementById('start-button');
-const scoreDisplay = document.getElementById('score');
+const scoreDisplay = document.getElementById('score-number');
 let gameActive = false;
 let score = 0;
 let spawnIntervalCoin, fallIntervalCoin, dangerInterval;
@@ -9,7 +9,7 @@ let spawnIntervalCoin, fallIntervalCoin, dangerInterval;
 function startGame() {
     gameActive = true;
     score = 0;
-    scoreDisplay.textContent = `Score: ${score}`;
+    scoreDisplay.textContent = `${score}`;
     startButton.style.display = 'none';
     spawnObjects();
     spawnDangerObjects();
@@ -100,7 +100,7 @@ function fallObject(obj) {
                 const sound = new Audio('src/SFX/coin_collected.mp3');
                 sound.volume = 0.2;
                 sound.play();
-                scoreDisplay.textContent = `Score: ${score}`;
+                scoreDisplay.textContent = `${score}`;
                 clearInterval(fallIntervalCoin);
                 obj.remove();
             }

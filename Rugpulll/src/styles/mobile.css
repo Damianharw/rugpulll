@@ -20,6 +20,11 @@
     width: 100%;
   }
 
+  .raccoon-image {
+    width: 300px !important;
+    height: 300px !important;
+  }
+
   .main-container .main-content .description {
     font-size: 1rem;
   }
