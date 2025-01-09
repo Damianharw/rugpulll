@@ -1,0 +1,79 @@
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  margin-bottom: 20px;
+  color: #fff; /* White text for the hero section */
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero img {
+  max-width: 750px;
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+/****** Content Sections ******/
+.content-section {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  color: #fff; /* White text for content sections */
+}
+
+.content-section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.content-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.content-section ul {
+  margin: 15px 0;
+  padding-left: 20px;
+}
+
+.content-section ul li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  list-style: disc;
+}
+
+.content-section ul li strong {
+  color: #ff6600; /* Accent color for key terms */
+}
+
+/****** Images in Content Sections ******/
+.content-section img {
+  max-width: 750px;
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+/****** Links in Content Sections ******/
+.content-section a {
+  color: #ff6600; /* Accent color for links */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.content-section a:hover {
+  text-decoration: underline;
+}
