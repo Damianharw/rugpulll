@@ -66,11 +66,9 @@
 
 .two-column-section div {
   flex: 1;
-}
-
-.two-column-section ul {
-  list-style-type: disc;
-  padding-left: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  border-radius: 16px;
 }
 
 .two-column-section ul li strong {
@@ -82,6 +80,12 @@
   align-items: center;
   justify-content: center;
   gap: 30px;
+}
+
+.list-gap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 /****** Responsive Design for Two-Column Layout ******/
