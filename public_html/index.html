@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="src/styles/_main-content.css" />
     <link rel="stylesheet" href="src/styles/mobile.css" />
     <link rel="stylesheet" href="src/styles/style.css" />
+    <link rel="stylesheet" href="src/styles/_footer.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -34,9 +35,9 @@
           <button class="nav-toggler">☰</button>
           <div class="nav-items">
             <div class="links">
-              <a href="#home">Home</a>
-              <a href="#about">About</a>
-              <a href="#guide">AntiRugGuide</a>
+              <a href="index.html">Home</a>
+              <!-- <a href="#about">About</a> -->
+              <a href="antirugguide.html">AntiRugGuide</a>
             </div>
             <div class="socials">
               <a href="https://t.me/+mVvZFlMFmU01ZDkx" target="_blank"
@@ -54,9 +55,9 @@
           </div>
           <!-- Mobile Navbar -->
           <div class="mobile-nav links linkss">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#guide">AntiRugGuide</a>
+            <a href="index.html">Home</a>
+            <!-- <a href="#about">About</a> -->
+            <a href="antirugguide.html">AntiRugGuide</a>
             <a href="https://t.me/+mVvZFlMFmU01ZDkx" target="_blank"
               ><i class="bx bxl-telegram"></i
             ></a>
@@ -73,71 +74,79 @@
       </nav>
     </header>
 
-    <div class="main-container">
-      <header class="main-header">
-        <picture>
-          <source media="(min-width: 768px)" srcset="./src/img/heading.png" />
-          <img src="./src/img/heading-mobile.png" alt="heading" />
-        </picture>
-      </header>
-      <main class="main-content">
-        <div class="image-container">
-          <img
-            src="src/img/rug_photo.jpeg"
-            alt="Raccoon with Pink Hat"
-            class="raccoon-image"
-          />
-        </div>
-        <div class="main-description">
-          <div class="description-background">
-            <p class="description">
-              Project Rug pulll is an educational initiative on the Vector Smart
-              Chain designed to empower crypto enthusiasts with the knowledge
-              and tools to identify rug pulls and stay safe in the rapidly
-              evolving blockchain space. Our mission is to create a safer crypto
-              ecosystem by offering resources, guides, and real-world examples
-              to help users spot scams and make informed decisions.
+    <main>
+      <div class="main-container">
+        <header class="main-header">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./src/img/heading.png" />
+            <img src="./src/img/heading-mobile.png" alt="heading" />
+          </picture>
+        </header>
+        <main class="main-content">
+          <div class="image-container">
+            <img
+              src="src/img/rug_photo.jpeg"
+              alt="Raccoon with Pink Hat"
+              class="raccoon-image"
+            />
+          </div>
+          <div class="main-description">
+            <div class="description-background">
+              <p class="description">
+                Project Rug pulll is an educational initiative on the Vector
+                Smart Chain designed to empower crypto enthusiasts with the
+                knowledge and tools to identify rug pulls and stay safe in the
+                rapidly evolving blockchain space. Our mission is to create a
+                safer crypto ecosystem by offering resources, guides, and
+                real-world examples to help users spot scams and make informed
+                decisions.
+              </p>
+            </div>
+          </div>
+          <a
+            href="https://www.defined.fi/vector/0x2a51299b722be08fc16932654ff96be400df1461?quoteToken=token0&cache=6ac17"
+            class="buy-button"
+            target="_blank"
+            >BUY NOW</a
+          >
+          <div class="contact-box">
+            <p class="contract-details">
+              <strong>$RUGpull contract</strong>
+              <span id="contract-number"
+                >0x6f1fa08c70c856439bf63e1d18b4e787c09e0463</span
+              >
             </p>
           </div>
-        </div>
-        <a
-          href="https://www.defined.fi/vector/0x2a51299b722be08fc16932654ff96be400df1461?quoteToken=token0&cache=6ac17"
-          class="buy-button"
-          target="_blank"
-          >BUY NOW</a
-        >
-        <div class="contact-box">
-          <p class="contract-details">
-            <strong>$RUGpull contract</strong>
-            <span id="contract-number"
-              >0x6f1fa08c70c856439bf63e1d18b4e787c09e0463</span
-            >
-          </p>
-        </div>
-      </main>
-    </div>
+        </main>
+      </div>
 
-    <!-- Minigame -->
-    <main>
-      <div style="display: flex; justify-content: center">
-        <div class="game-container" id="game-container">
-          <div class="score" id="score">
-            <div
-              style="
-                background: url(src/img/bitcoin.png);
-                rotate: -90deg;
-                scale: 0.75;
-                width: 101px;
-                height: 101px;
-                background-size: cover;
-              "
-            ></div>
-            <span id="score-number">0</span>
+      <!-- Minigame -->
+      <div>
+        <div style="display: flex; justify-content: center">
+          <div class="game-container" id="game-container">
+            <div class="score" id="score">
+              <div
+                style="
+                  background: url(src/img/bitcoin.png);
+                  rotate: -90deg;
+                  scale: 0.75;
+                  width: 101px;
+                  height: 101px;
+                  background-size: cover;
+                "
+              ></div>
+              <span id="score-number">0</span>
+            </div>
+            <button class="start-button" id="start-button">Start Game</button>
           </div>
-          <button class="start-button" id="start-button">Start Game</button>
         </div>
       </div>
     </main>
+
+    <footer class="footer">
+      <p>© 2025 $RUGpull - Empowering Safer Crypto Investments</p>
+    </footer>
+
     <script src="src/scripts/script.js"></script>
     <script src="src/scripts/minigame.js"></script>
   </body>
