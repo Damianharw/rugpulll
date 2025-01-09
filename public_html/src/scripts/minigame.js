@@ -33,7 +33,8 @@ function spawnObjects() {
     spawnIntervalCoin = setInterval(() => {
         const obj = document.createElement('div');
         obj.classList.add('falling-object');
-        obj.style.left = Math.random() * (gameContainer.clientWidth - 20) + 'px';
+        const val = Math.random() * (gameContainer.clientWidth*0.9);
+        obj.style.left = Math.max(gameContainer.clientWidth*0.1, val) + 'px';
         obj.style.top = '-30px';
         gameContainer.appendChild(obj);
         fallObject(obj);
@@ -44,7 +45,8 @@ function spawnDangerObjects() {
     dangerInterval = setInterval(() => {
         const dangerObj = document.createElement('div');
         dangerObj.classList.add('danger-object');
-        dangerObj.style.top = Math.random() * (gameContainer.clientHeight - 40) + 'px';
+        const val = Math.random() * (gameContainer.clientHeight*0.8);
+        dangerObj.style.top = Math.max(gameContainer.clientHeight*0.2, val) + 'px';
 
         // Randomly decide direction (left to right or right to left)
         const moveRight = Math.random() > 0.5;
@@ -97,9 +99,7 @@ function fallObject(obj) {
             if (gameActive && !isCollected) {
                 score++;
                 isCollected = true;
-                const sound = new Audio('src/SFX/coin_collected.mp3');
-                sound.volume = 0.2;
-                sound.play();
+                playCollectedSound();
                 scoreDisplay.textContent = `${score}`;
                 clearInterval(fallIntervalCoin);
                 obj.remove();
@@ -111,6 +111,12 @@ function fallObject(obj) {
             obj.remove();
         }
     }, 25);
+}
+
+function playCollectedSound() {
+    const sound = new Audio('src/SFX/coin_collected.mp3');
+    sound.volume = 0.2;
+    sound.play();
 }
 
 // Check if cursor is inside the rectangle

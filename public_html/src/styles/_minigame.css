@@ -36,6 +36,7 @@
   rotate: -90deg;
   background-size: cover;
   background-repeat: no-repeat;
+  outline: none;
 }
 
 @keyframes rotate {
