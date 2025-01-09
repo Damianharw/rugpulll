@@ -17,9 +17,9 @@ function startGame() {
 }
 
 // Function to end the game
-function endGame() {
+function endGame(reason = 'You pulled the rug!') {
     gameActive = false;
-    alert(`Game Over! Your score: ${score}`);
+    alert(`${reason} Your score: ${score}`);
     startButton.style.display = 'block';
     clearInterval(spawnIntervalCoin);
     clearInterval(dangerInterval);
@@ -33,7 +33,7 @@ function spawnObjects() {
     spawnIntervalCoin = setInterval(() => {
         const obj = document.createElement('div');
         obj.classList.add('falling-object');
-        const val = Math.random() * (gameContainer.clientWidth*0.9);
+        const val = Math.random() * (gameContainer.clientWidth*0.8);
         obj.style.left = Math.max(gameContainer.clientWidth*0.1, val) + 'px';
         obj.style.top = '-30px';
         gameContainer.appendChild(obj);
@@ -73,7 +73,7 @@ function moveDangerObject(obj, moveRight) {
         // Check collision with cursor
         obj.addEventListener('mousemove', () => {
             if (gameActive) {
-                endGame();
+                endGame('You pulled the rug!');
             }
         });
 
