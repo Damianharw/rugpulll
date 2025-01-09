@@ -168,3 +168,9 @@
     height: auto; /* Make images take up most of the screen width */
   }
 }
+
+.warning {
+  font-weight: bold;
+  padding-top:20px; 
+  text-decoration: underline;
+}
