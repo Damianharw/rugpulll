@@ -22,9 +22,11 @@
   background-color: #f00;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 20px;
   cursor: pointer;
   font-size: 16px;
+  -webkit-tap-highlight-color: transparent;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .falling-object {
@@ -36,7 +38,7 @@
   rotate: -90deg;
   background-size: cover;
   background-repeat: no-repeat;
-  outline: none;
+  -webkit-tap-highlight-color: transparent; /* Removes the black box on tap */
 }
 
 @keyframes rotate {
