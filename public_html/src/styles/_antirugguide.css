@@ -5,13 +5,13 @@
 }
 
 .hero-content h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 20px;
   color: #fff;
 }
 
 .hero-content p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #fff;
 }
 
@@ -31,7 +31,7 @@
 
 .content-section p,
 .content-section ul {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #fff;
   line-height: 1.6;
 }
@@ -69,6 +69,7 @@
   background-color: rgba(0, 0, 0, 0.2);
   padding: 16px;
   border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .two-column-section ul li strong {
@@ -88,9 +89,82 @@
   gap: 10px;
 }
 
+.rug-pull-article {
+  margin: 40px auto; /* Center the article with space from footer */
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.2); /* Subtle background */
+  color: #fff; /* White text for readability */
+  border-radius: 16px;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  text-align: center;
+}
+
+.rug-pull-article h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ff6600; /* Accent color for the heading */
+}
+
+.rug-pull-article p {
+  margin-bottom: 15px;
+}
+
+.exhibit-img {
+  display: flex;
+  justify-content: center; /* Center images horizontally */
+  align-items: center; /* Align images vertically */
+  gap: 20px; /* Add spacing between images */
+  flex-wrap: wrap; /* Wrap images to the next line on smaller screens */
+}
+
+.exhibit-img img {
+  max-width: 100%; /* Make the image responsive */
+  height: 450px; /* Maintain the aspect ratio */
+  border-radius: 10px; /* Add rounded corners for a polished look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+.content-section.exhibit {
+  max-width: 1400px;
+}
+
 /****** Responsive Design for Two-Column Layout ******/
 @media (max-width: 768px) {
   .two-column-section {
     flex-direction: column;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+
+  .content-section p,
+  .content-section ul {
+    font-size: 1rem;
+  }
+
+  .rug-pull-article {
+    padding: 15px;
+    font-size: 1rem;
+  }
+
+  .rug-pull-article h2 {
+    font-size: 1.5rem;
+  }
+
+  .exhibit-img {
+    flex-direction: column; /* Stack images vertically on small screens */
+    gap: 15px;
+  }
+
+  .exhibit-img img {
+    width: 90%;
+    height: auto; /* Make images take up most of the screen width */
   }
 }
