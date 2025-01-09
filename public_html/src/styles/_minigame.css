@@ -34,6 +34,8 @@
   background: url("../img/bitcoin.png") 0 0 no-repeat;
   animation: rotate 0.5s steps(10) infinite;
   rotate: -90deg;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @keyframes rotate {

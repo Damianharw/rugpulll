@@ -50,7 +50,13 @@
   }
 
   #score-number {
-    font-size: 3rem;
+    font-size: 4rem;
+    left: -25px;
+    top: -20px;
+  }
+
+  .falling-object {
+    scale: 0.6;
   }
 }
 
