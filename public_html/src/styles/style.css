@@ -17,6 +17,10 @@ a {
   text-decoration: none;
 }
 
+ul li {
+  list-style: none;
+}
+
 .video-background {
   position: fixed;
   top: 0;
