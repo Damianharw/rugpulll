@@ -4,8 +4,8 @@ const scoreDisplay = document.getElementById('score-number');
 let gameActive = false;
 let score = 0;
 let spawnIntervalCoin, fallIntervalCoin, dangerInterval;
-let soundArray = ['src/SFX/jasonLetsGp.mp4',
-    'src/SFX/jasonLetsGp.mp4', 
+let soundArray = [
+    'src/SFX/jasonLetsGo.mp4', 
     'src/SFX/jasonPumpItUp.mp4',
     'src/SFX/jasonSendIt.mp4',
     'src/SFX/jasonTakingOverOcean.mp4',
@@ -129,9 +129,16 @@ function playCollectedSound() {
         sound.play();
     }
     else {
-        const sound = new Audio(soundArray[Math.floor(Math.random() * soundArray.length)]);
-        sound.volume = 0.2;
-        sound.play();
+        if(score == 5) {
+            const sound = new Audio('src/SFX/whitHellaBullish.mp4');
+            sound.volume = 0.2;
+            sound.play();
+        }
+        else {
+            const sound = new Audio(soundArray[Math.floor(Math.random() * soundArray.length)]);
+            sound.volume = 0.2;
+            sound.play();
+        }
     }
 }
 
