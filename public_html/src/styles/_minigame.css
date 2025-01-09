@@ -51,6 +51,7 @@
   height: 180px;
   background: url("../img/rug.png");
   background-repeat: no-repeat;
+  background-size: cover;
   animation: fly 1s steps(10) infinite;
   scale: 0.8;
 }
