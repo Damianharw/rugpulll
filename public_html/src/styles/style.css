@@ -18,9 +18,12 @@ a {
 }
 
 ul li {
-  list-style: none;
+  list-style: inside;
 }
 
+#helpfulTools ul li {
+  list-style: none;
+}
 .video-background {
   position: fixed;
   top: 0;

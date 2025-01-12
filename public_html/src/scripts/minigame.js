@@ -14,6 +14,8 @@ let soundArray = [
     'src/SFX/whitSendItSully.mp4'
 ]
 
+let bgMusic = new Audio('src/SFX/pumpitup.mp3');
+
 // Function to start the game
 function startGame() {
     gameActive = true;
@@ -23,11 +25,21 @@ function startGame() {
     spawnObjects();
     spawnDangerObjects();
     checkCursorBounds();
+    bgMusic.play();
+    bgMusic.volume = 0.025;
+    const isIos = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    if (isIos) {
+        bgMusic.volume = 0.1; // iOS-specific lower background volume
+    } else {
+        bgMusic.volume = 0.5;
+    }
 }
 
 // Function to end the game
 function endGame(reason = 'You pulled the rug!') {
     gameActive = false;
+    bgMusic.currentTime = 0;
+    bgMusic.pause();
     alert(`${reason} Your score: ${score}`);
     startButton.style.display = 'block';
     clearInterval(spawnIntervalCoin);

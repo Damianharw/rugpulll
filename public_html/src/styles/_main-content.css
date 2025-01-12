@@ -108,3 +108,17 @@
 #contract-number {
   font-size: 1.5rem;
 }
+
+#toast {
+  position: fixed;
+  bottom: 20px;              /* distance from bottom */
+  left: 50%;                 /* center horizontally */
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.3);  /* transparent black */
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  display: none;             /* hidden by default */
+  z-index: 9999;             /* ensure it's on top */
+  font-family: sans-serif;
+}

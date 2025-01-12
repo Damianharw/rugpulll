@@ -15,6 +15,8 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+
   </head>
   <body>
     <!-- Video -->
@@ -112,11 +114,16 @@
           <div class="contact-box">
             <p class="contract-details">
               <strong>$RUGpull contract</strong>
-              <span id="contract-number"
-                >0x6f1fa08c70c856439bf63e1d18b4e787c09e0463</span
-              >
+              <span>
+                <span id="contract-number">
+                  0x6f1fa08c70c856439bf63e1d18b4e787c09e0463
+                </span>
+                <button id="copyBtn" href="" title="Copy to clipboard" style="margin-left: 15px; background-color: transparent; border: none;">
+                  <i class="bx bx-copy" style="font-size:24px; color:white;"></i>
+                </button>
+              </span>
             </p>
-          </div>
+          </div> 
         </main>
       </div>
       <!-- Minigame -->
@@ -142,6 +149,8 @@
         </div>
       </div>
     </main>
+
+    <div id="toast">Copied to clipboard</div>
 
     <footer class="footer">
       <p>© 2025 $RUGpulll - Empowering Safer Crypto Investments</p>
