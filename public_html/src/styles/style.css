@@ -54,3 +54,13 @@ ul li {
   margin-bottom: 10px;
 }
 
+.moving-div {
+  position: fixed;
+  left: -100px; /* Start off-screen to the left */
+  width: 100px;  /* Adjust these to match your GIF's size */
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+

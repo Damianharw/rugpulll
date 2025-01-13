@@ -27,11 +27,11 @@ function startGame() {
     checkCursorBounds();
     bgMusic.play();
     bgMusic.volume = 0.025;
-    const isIos = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    const isIos = /Safari/.test(navigator.userAgent);
     if (isIos) {
-        bgMusic.volume = 0.1; // iOS-specific lower background volume
+        bgMusic.volume = 0; // iOS-specific lower background volume
     } else {
-        bgMusic.volume = 0.5;
+        bgMusic.volume = 0.04;
     }
 }
 
